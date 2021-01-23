@@ -1,0 +1,123 @@
+
+.col-3{
+    background-color: #333541;
+    padding-left: 50px;
+}
+h1,h2{
+    color: #4ECDF5;
+}
+h1{
+    margin-top: 108px;
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+}
+h2{
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-left: 32px;
+    margin-bottom: 0;
+}
+
+.col-9{
+    background-color: #383A47;
+    padding-left: 50px;
+}
+.card{
+    border-radius: 30px;
+    background: linear-gradient(335.59deg, #424455 32.99%, #525466 98.88%);
+    width: 306px;
+    height: 480px;
+    margin-right: 10px;
+
+}
+ul li a{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+}
+h4{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 32px;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 0.01em;
+
+    /* Source White */
+
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-left: 32px;
+}
+h3 {
+    font-family: Noto Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    margin-top: 20px;
+}
+.badge{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+}
+.bnd{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+img{
+    width: 138px;
+    height: 138px;
+    margin: auto;
+    box-sizing: border-box;
+}
+.badge a{
+    color: white;
+}
+.row{
+    height: 1080px;
+}
+
+.card-parent{
+    display: flex;
+    overflow: auto;
+  white-space: nowrap;
+  width: auto;
+}
+.card-parent .card{
+    padding: 0 50px;
+    margin-right: 20px;
+    display:block;
+    min-width:350px!important;
+}
+
