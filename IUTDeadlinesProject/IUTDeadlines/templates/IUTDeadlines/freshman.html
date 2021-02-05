@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script data-ad-client="ca-pub-6037377121662079" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <meta charset="UTF-8">
+    <title>IUT DEADLINES</title>
+    <link rel="stylesheet" href="{% static 'IUTDeadlines/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'IUTDeadlines/css/main.css' %}">
+</head>
+<body>
+<div class="row">
+    <div class="col-3">
+        <h1 class="ml-3">IUT DEADLINES</h1>
+        <ul class="nav flex-column">
+            <li class="nav-item"><a href="{% url 'freshman' %}" class="nav-link text-white"><u>Freshmen</u></a></li>
+            <li class="nav-item"><a href="{% url 'index' %}" class="nav-link text-white">Sophomores</a></li>
+            <li class="nav-item"><a href="{% url 'junior' %}" class="nav-link text-white">Juniors</a></li>
+            <li class="nav-item"><a href="{% url 'senior' %}" class="nav-link text-white">Seniors</a></li>
+        </ul>
+    </div>
+    <div class="col-9">
+        <h1>FRESHMEN</h1>
+        <h3 class="text-white">Quick links</h3>
+        <div class="bnd mt-3">
+            <span class="badge badge-pill badge-secondary"><a href="http://eclass.inha.uz/">eclass.inha.uz</a></span>
+            <span class="badge badge-pill badge-secondary"><a href="https://classroom.google.com/">google classroom</a></span>
+            <span class="badge badge-pill badge-secondary"><a href="http://online.inha.uz/">online.inha.uz</a></span>
+            <span class="badge badge-pill badge-secondary"><a href="http://ins.inha.uz/">ins.inha.uz</a></span>
+        </div>
+        <h3 class="text-white">Deadlines</h3>
+        <div class="card-parent mt-3 mb-3">
+
+                {% for d, k in allDays%}
+                <div class="card bg-dark">
+                    <h2>{{d.day}}</h2>
+                    <p>{{d.year}}</p>
+                        {%for s in Subjects%}
+                            {% if s.year.year == d.year %}
+                                    <h4 class="text-white"> {{s.subject}} <span class="text-danger"> {{s.deadline}} </span></h4>
+                                    <p>{{s.location}}</p>
+                            {% endif %}
+                        {%endfor%}
+                        {%if k != 1%}
+                            <img src="{% static 'IUTDeadlines/images/relax%201.png'%}" alt="">
+                        {% endif %}
+                </div>
+                {% endfor %}
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
